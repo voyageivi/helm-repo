@@ -45,6 +45,7 @@ service:
   #  nodePort: 8080
   externalIPs: [ ]
 
+probe: /health_check
 
 ingress:
   enabled: false

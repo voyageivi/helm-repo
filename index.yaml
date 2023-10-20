@@ -3,12 +3,12 @@ entries:
   simple:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-19T22:26:24.720583+08:00"
+    created: "2023-10-20T10:02:53.253572+08:00"
     description: Dexin simple service
-    digest: 54936051137403c27e1a9db73acbd8b852a536cae164808d4551e7c39b8d2538
+    digest: 35cbf2fb9eeb3ad96b70dbb4a2f2cf3d39a61e9a02a1f0e0b718a0d993071cfe
     name: simple
     type: application
     urls:
     - https://voyageivi.github.io/helm-repo/simple-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-19T22:26:24.719979+08:00"
+generated: "2023-10-20T10:02:53.253002+08:00"

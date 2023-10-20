@@ -4,3 +4,4 @@ package:
 index:
 	helm repo index . --url https://voyageivi.github.io/helm-repo/
 
+deploy: package index
