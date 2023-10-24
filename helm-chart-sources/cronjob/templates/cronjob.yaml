@@ -4,6 +4,8 @@ metadata:
   name: {{ include "job.fullname" . }}
 spec:
   schedule: "{{ .Values.schedule }}"
+  successfulJobsHistoryLimit: {{.Values.history.success}}
+  failedJobsHistoryLimit: {{.Values.history.fail}}
   jobTemplate:
     spec:
       template:
@@ -24,12 +26,10 @@ spec:
               env:
               {{- toYaml . | nindent 16 }}
               {{- end }}
+              {{- with .Values.volumeMounts }}
               volumeMounts:
-                - name: vol1
-                  mountPath: /data/services/{{ .Release.Name }}/datalogs
-                  {{- with .Values.volumeMounts }}
-                    {{- toYaml . | nindent 12 }}
-                  {{- end }}
+                {{- toYaml . | nindent 16 }}
+              {{- end }}
           volumes:
             - name: vol1
               hostPath:

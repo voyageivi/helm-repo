@@ -22,7 +22,7 @@ resources: { }
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # limits:
   #   cpu: 100m
-  #   memory: 128Mi
+#   memory: 128Mi
 # requests:
 #   cpu: 100m
 #   memory: 128Mi
@@ -49,3 +49,7 @@ restartPolicy: OnFailure
 command: [ ]
 
 schedule: "0 0 */1 * *"
+
+history:
+  success: 3
+  fail: 3
