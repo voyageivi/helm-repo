@@ -30,13 +30,13 @@ spec:
                   {{- with .Values.volumeMounts }}
                     {{- toYaml . | nindent 12 }}
                   {{- end }}
-              volumes:
-                - name: vol1
-                  hostPath:
-                    path: /data/logs/{{ .Release.Name }}
-                  {{- with .Values.volumes }}
-                    {{- toYaml . | nindent 8 }}
-                  {{- end }}
+          volumes:
+            - name: vol1
+              hostPath:
+                path: /data/logs/{{ .Release.Name }}
+              {{- with .Values.volumes }}
+                {{- toYaml . | nindent 8 }}
+              {{- end }}
           restartPolicy: {{ .Values.restartPolicy }}
           {{- with .Values.affinity }}
           affinity:
