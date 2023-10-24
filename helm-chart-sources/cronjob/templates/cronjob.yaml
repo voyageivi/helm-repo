@@ -1,0 +1,44 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ include "job.fullname" . }}
+spec:
+  schedule: "{{ .Values.schedule }}"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          {{- with .Values.imagePullSecrets }}
+          imagePullSecrets:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          containers:
+            - name: job
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              {{- with .Values.command}}
+              command:
+              {{- toYaml . | nindent 16 }}
+              {{- end }}
+              {{- with .Values.env }}
+              env:
+              {{- toYaml . | nindent 16 }}
+              {{- end }}
+              volumeMounts:
+                - name: vol1
+                  mountPath: /data/services/{{ .Release.Name }}/datalogs
+                  {{- with .Values.volumeMounts }}
+                    {{- toYaml . | nindent 12 }}
+                  {{- end }}
+              volumes:
+                - name: vol1
+                  hostPath:
+                    path: /data/logs/{{ .Release.Name }}
+                  {{- with .Values.volumes }}
+                    {{- toYaml . | nindent 8 }}
+                  {{- end }}
+          restartPolicy: {{ .Values.restartPolicy }}
+          {{- with .Values.affinity }}
+          affinity:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}

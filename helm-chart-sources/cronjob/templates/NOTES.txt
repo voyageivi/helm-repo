@@ -1,0 +1,5 @@
+RunJob
+Name: {{.Release.Name }}
+Namespace: {{ .Release.Namespace }}
+Schedule: {{ .Values.schedule }}
+Trigger: kubectl -n {{ .Release.Namespace }} create job --from=cronjob/{{.Release.Name }} {{.Release.Name }}-manual-001
