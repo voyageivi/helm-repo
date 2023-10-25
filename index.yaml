@@ -3,9 +3,9 @@ entries:
   cronjob:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-24T21:57:26.747158+08:00"
+    created: "2023-10-25T17:23:51.432256+08:00"
     description: A CronJob
-    digest: 6a56d00b4301b3700078fe477ae63638ae15792b68e1920adfec1bb866301b25
+    digest: b70135c4d8e82a39aeee82d01112f7fb6cb78003dd402c050c3b2ac7c6d337e1
     name: cronjob
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   simple:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-24T21:57:26.747852+08:00"
+    created: "2023-10-25T17:23:51.432963+08:00"
     description: Dexin simple service
-    digest: 7c1d81ae301d1590e73790479c2054a162dedce0342e48d412c48c537aa22295
+    digest: 1942a36b2ba489ee69de95accc3fce5e288f91d9b6e126614e9bc921a7594224
     name: simple
     type: application
     urls:
@@ -24,7 +24,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-24T21:57:26.747607+08:00"
+    created: "2023-10-25T17:23:51.432712+08:00"
     description: Dexin simple service
     digest: 35cbf2fb9eeb3ad96b70dbb4a2f2cf3d39a61e9a02a1f0e0b718a0d993071cfe
     name: simple
@@ -32,4 +32,4 @@ entries:
     urls:
     - https://voyageivi.github.io/helm-repo/simple-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-24T21:57:26.746706+08:00"
+generated: "2023-10-25T17:23:51.431862+08:00"
