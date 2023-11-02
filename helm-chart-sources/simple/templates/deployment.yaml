@@ -19,7 +19,7 @@ spec:
       {{- end }}
       labels:
         {{- include "simple.labels" . | nindent 8 }}
-	{{- with .Values.podLabels }}
+ {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
     spec:
@@ -44,6 +44,7 @@ spec:
           env:
             {{- toYaml . | nindent 12 }}
           {{- end }}
+          {{- if .Values.probe }}
           livenessProbe:
             httpGet:
               path: {{ .Values.probe }}
@@ -52,6 +53,7 @@ spec:
             httpGet:
               path: {{ .Values.probe }}
               port: http
+          {{-  end}}
           {{- with .Values.resources }}
           resources:
             {{- toYaml . | nindent 12 }}
