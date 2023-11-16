@@ -47,12 +47,16 @@ spec:
           {{- if .Values.probe }}
           livenessProbe:
             httpGet:
-              path: {{ .Values.probe }}
+              path: {{ .Values.probe.path }}
               port: http
+            initialDelaySeconds: {{ .Values.probe.initTimeout  }}
+            timeoutSeconds: {{ .Values.probe.timeout  }}
           readinessProbe:
             httpGet:
-              path: {{ .Values.probe }}
+              path: {{ .Values.probe.path }}
               port: http
+            initialDelaySeconds: {{ .Values.probe.initTimeout  }}
+            timeoutSeconds: {{ .Values.probe.timeout  }}
           {{-  end}}
           {{- with .Values.resources }}
           resources:

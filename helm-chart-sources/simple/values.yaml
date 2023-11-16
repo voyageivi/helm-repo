@@ -34,8 +34,8 @@ podSecurityContext: { }
 securityContext: { }
   # capabilities:
   #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
+#   - ALL
+# readOnlyRootFilesystem: true
 # runAsNonRoot: true
 # runAsUser: 1000
 
@@ -48,7 +48,10 @@ service:
   #  nodePort: 8080
   externalIPs: [ ]
 
-probe: /health_check
+probe:
+  path: /health_check
+  initTimeout: 0
+  timeout: 1
 
 ingress:
   enabled: false
@@ -70,8 +73,8 @@ resources: { }
   # limits:
   #   cpu: 100m
   #   memory: 128Mi
-  # requests:
-  #   cpu: 100m
+# requests:
+#   cpu: 100m
 #   memory: 128Mi
 
 autoscaling:
