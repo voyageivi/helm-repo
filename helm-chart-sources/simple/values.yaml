@@ -33,7 +33,7 @@ podSecurityContext: { }
 
 securityContext: { }
   # capabilities:
-  #   drop:
+#   drop:
 #   - ALL
 # readOnlyRootFilesystem: true
 # runAsNonRoot: true
@@ -52,6 +52,8 @@ probe:
   path: /health_check
   initTimeout: 0
   timeout: 1
+
+gracefulShutdown: 5
 
 ingress:
   enabled: false
@@ -72,7 +74,7 @@ ingress:
 resources: { }
   # limits:
   #   cpu: 100m
-  #   memory: 128Mi
+#   memory: 128Mi
 # requests:
 #   cpu: 100m
 #   memory: 128Mi

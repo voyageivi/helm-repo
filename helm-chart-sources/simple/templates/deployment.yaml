@@ -68,6 +68,7 @@ spec:
           {{- with .Values.volumeMounts }}
             {{- toYaml . | nindent 12 }}
           {{- end }}
+      terminationGracePeriodSeconds: {{ .Values.gracefulShutdown | default 5}}
       volumes:
         - name: vol1
           hostPath:

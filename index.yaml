@@ -3,9 +3,9 @@ entries:
   cronjob:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-16T12:39:03.039265+08:00"
+    created: "2023-12-26T16:11:14.439869+08:00"
     description: A CronJob
-    digest: 7ae8e653d0fee7ca53ec6f36d9be5351d957dc0a476697b25126d6b029ccfcfe
+    digest: 5ef96c6308e51f549b4e907ec201e80e1562b0f851d96d32b4b6ae2b5db5c39b
     name: cronjob
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-16T12:39:03.039075+08:00"
+    created: "2023-12-26T16:11:14.439726+08:00"
     description: A CronJob
     digest: 46e6044649e79cdecb0a5b841a4dd72949fa091cdfc6195c38bd4f971319787f
     name: cronjob
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-16T12:39:03.038687+08:00"
+    created: "2023-12-26T16:11:14.439325+08:00"
     description: A CronJob
     digest: 763bb522c748f1854542bba729e2ea2934007ff566b1442ce3e27b43840c397c
     name: cronjob
@@ -34,7 +34,17 @@ entries:
   simple:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-16T12:39:03.041347+08:00"
+    created: "2023-12-26T16:11:14.441933+08:00"
+    description: Dexin simple service
+    digest: c16e586b8e549a69f38a139136781c5ac4e9cb250b5c902b3c5cf85410a027ac
+    name: simple
+    type: application
+    urls:
+    - https://voyageivi.github.io/helm-repo/simple-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-12-26T16:11:14.441646+08:00"
     description: Dexin simple service
     digest: 1fd8af52490eb2163039018465b0990274fd7717411564ae0c96ba17430ab757
     name: simple
@@ -44,7 +54,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-16T12:39:03.03984+08:00"
+    created: "2023-12-26T16:11:14.441133+08:00"
     description: Dexin simple service
     digest: 12d3ce4d5c12b87ca8c10849fd9ce274093c5b327de425e0910e5f8f6ad775b6
     name: simple
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://voyageivi.github.io/helm-repo/simple-0.1.3.tgz
     version: 0.1.3
-generated: "2023-12-16T12:39:03.038144+08:00"
+generated: "2023-12-26T16:11:14.438766+08:00"
