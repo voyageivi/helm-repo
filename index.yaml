@@ -3,9 +3,9 @@ entries:
   cronjob:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.450828+08:00"
+    created: "2024-02-27T21:18:37.327711+08:00"
     description: A CronJob
-    digest: ce5cfb48a67876123705982d60e7ec61c598eb0592ce52a02e987fffd4aa73cc
+    digest: 4bc8fedc7692176b237b8b282fda533cad41070d8daa868e3a3d26dcb81a34f6
     name: cronjob
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.450672+08:00"
+    created: "2024-02-27T21:18:37.327544+08:00"
     description: A CronJob
     digest: 46e6044649e79cdecb0a5b841a4dd72949fa091cdfc6195c38bd4f971319787f
     name: cronjob
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.450378+08:00"
+    created: "2024-02-27T21:18:37.327057+08:00"
     description: A CronJob
     digest: 763bb522c748f1854542bba729e2ea2934007ff566b1442ce3e27b43840c397c
     name: cronjob
@@ -34,9 +34,9 @@ entries:
   simple:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.452482+08:00"
+    created: "2024-02-27T21:18:37.33006+08:00"
     description: Dexin simple service
-    digest: 6fd0f5ff6cb39c7ce0286b5bc8c470b6be1ed659cb5357ea7ff1483c97f4d93f
+    digest: 1c8b9918d7e993b073e5bf53823bc0f0e0b4591a2d30254432f16b20f5720dbc
     name: simple
     type: application
     urls:
@@ -44,7 +44,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.452202+08:00"
+    created: "2024-02-27T21:18:37.329781+08:00"
     description: Dexin simple service
     digest: d63427ec9be8780769dd257c9046c5b17fe4adc58d0e783381843b67c0a5e14d
     name: simple
@@ -54,7 +54,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.451805+08:00"
+    created: "2024-02-27T21:18:37.329356+08:00"
     description: Dexin simple service
     digest: 1fd8af52490eb2163039018465b0990274fd7717411564ae0c96ba17430ab757
     name: simple
@@ -64,7 +64,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-27T21:17:16.451322+08:00"
+    created: "2024-02-27T21:18:37.328128+08:00"
     description: Dexin simple service
     digest: 12d3ce4d5c12b87ca8c10849fd9ce274093c5b327de425e0910e5f8f6ad775b6
     name: simple
@@ -72,4 +72,4 @@ entries:
     urls:
     - https://voyageivi.github.io/helm-repo/simple-0.1.3.tgz
     version: 0.1.3
-generated: "2024-02-27T21:17:16.449198+08:00"
+generated: "2024-02-27T21:18:37.326276+08:00"
