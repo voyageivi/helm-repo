@@ -72,7 +72,7 @@ spec:
       volumes:
         - name: vol1
           hostPath:
-            path: /data/logs/{{ .Release.Name }}
+            path: /data/logs/{{ include "simple.logdir" . }}
       {{- with .Values.volumes }}
 
         {{- toYaml . | nindent 8 }}
