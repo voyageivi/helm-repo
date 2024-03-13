@@ -50,7 +50,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 日志目录
 */}}
 {{- define "simple.logdir" -}}
-{{- if .Values.logdirPrefix }}{{- printf "%s_%s" .Values.logdirPrefix .Release.Name }}{{- else }}{{ .Release.Name }}{{- end }}
+{{- if .Values.logdirPrefix }}{{- printf "%s/%s" .Values.logdirPrefix .Release.Name }}{{- else }}{{ .Release.Name }}{{- end }}
 {{- end }}
 
 {{/*
